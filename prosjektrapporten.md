@@ -10,13 +10,13 @@ vi har lagt en repository som er public*
 2. Develop
 3.  feature/branch (funcjonelt branch)
 *la oss å beskrive en kort besekrivelsen om de tre branches.*
-* main:
+* **main:**
 *Som vi vet at Main/Master barnch skapet allerede når man lage new repositery, på dette branche ingen kan jobber direkte.
 Main må innholde den siste version, stabil av koden av prosjektet, vi legger koden her  når en sprint er avsluttet og prosjektet er klart for levering.*
-* Develop:
+* **Develop:**
 *I denne branchen samler vi alle nye kode fra våres utviklene, Når noen av våre utvikler har laget en ny funksjon,  legger vi den inn her på develop branch.
 Det er den nyeste versjonen, men den kan fortsatt ha noen småfeil som vi må fikse.*
-* feature/branch:
+* **feature/branch:**
 *Under den develop branch, vi har noe som heter feature så dette på en måte kan vi kalles også funksjonalitet branch, det betyr at hvert medllemer av våres utvikler har egen branch som å jobbe med, for eksempel: Mahmoud har feature/login og Majed har feature/map,
 så man kan jobbe i ro uten å krasje med hverandre arbied.
 Det er viktig at når man er ferdig med å skrive koden på denne branchen, bør man teste koden til å sjekkke at alt funker som det skal, deretter man kan push dette inn i develop branch-en.*
