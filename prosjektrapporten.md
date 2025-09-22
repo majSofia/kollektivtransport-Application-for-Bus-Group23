@@ -9,7 +9,8 @@ vi har lagt en repository som er public*
 1. Main
 2. Develop
 3.  feature/branch (funcjonelt branch)
-*la oss å beskrive en kort besekrivelsen om de tre branches.*
+
+*la oss å beskrive en kort besekrivelsen om de tre branches*
 * ##### **main:**
 *Som vi vet at Main/Master barnch skapet allerede når man lage new repositery, på dette branche ingen kan jobber direkte.
 Main må innholde den siste version, stabil av koden av prosjektet, vi legger koden her  når en sprint er avsluttet og prosjektet er klart for levering.*
