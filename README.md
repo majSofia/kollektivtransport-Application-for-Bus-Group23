@@ -7,6 +7,6 @@ scenarier og daglige utfordringer.
 byen til Halden byen og omvendt.
 Vi fokuserer for tiden på tre hoved Personas*
 personas:
-1. bruker, 
+1. bruker 
 2. admin
-3. utvikler.
+3. utvikler
