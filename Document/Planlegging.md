@@ -1,18 +1,21 @@
 # Planlegging raporten 
 1. #### Sprintarbeid: 
- Sprint planlegging:
+* Sprint planlegging:
 ## Sprint 1: 
  ##### SprintGoal:
    **1. Lage Login-siden:
     Ansvarepersoner er : Majed + Mahmoud     
     Estimater tid: 3 dager 
     Sprint Backlogen:
+
     * Validere feltet ved innlogging 
     * Legg til ruter for å navigere brukeren til registreringssiden.
     2. Lage New User : 
+
     Ansvarepersoner er : Majed + Mahmoud
     Estimater tid: 4 dager
     Sprint Backlogen:
+
     * Validere feltet der brukeren oppretter konto. 
     * Legg til ruter for å navigere brukerne til innlogging.**
 
