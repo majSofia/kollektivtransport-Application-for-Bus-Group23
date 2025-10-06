@@ -3,9 +3,8 @@
 1.1 Sprint planlegging:
     ## Sprint 1: 
    ##### SprintGoal:
-    1. Lage Login-siden:
-    Ansvarepersoner er : Majed + Mahmoud
-    
+    1.Lage Login-siden:
+    Ansvarepersoner er : Majed + Mahmoud     
     Estimater tid: 3 dager 
     Sprint Backlogen:
     * Validere input field for login.
