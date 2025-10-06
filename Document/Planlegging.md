@@ -1,7 +1,7 @@
 # Planlegging raporten 
 1. #### Sprintarbied: 
  Sprint planlegging:
-    ## Sprint 1: 
+## Sprint 1: 
    ##### SprintGoal:
     1. Lage Login-siden:
     Ansvarepersoner er : Majed + Mahmoud     
