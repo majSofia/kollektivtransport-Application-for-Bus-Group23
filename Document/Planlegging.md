@@ -1,5 +1,5 @@
 # Planlegging raporten 
-1. ####Sprintarbeid: 
+1. #### Sprintarbeid: 
  Sprint planlegging:
 ## Sprint 1: 
  ##### SprintGoal:
