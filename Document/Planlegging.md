@@ -5,7 +5,7 @@
  ##### SprintGoal:
    1. Lage Login-siden:
 
-    **Ansvarepersoner er : Majed + Mahmoud     
+**  Ansvarepersoner er : Majed + Mahmoud     
     Estimater tid: 3 dager 
     Sprint Backlogen:
 
@@ -18,7 +18,7 @@
     Sprint Backlogen:
 
     * Validere feltet der brukeren oppretter konto. 
-    * Legg til ruter for å navigere brukerne til innlogging.**
+    * Legg til ruter for å navigere brukerne til innlogging. **
 
 ##### Målet av Sprint1:
     **Målet vårt etter at Sprint1 er fullført er å kunne vise frem to av de sidene i proudkt, login side, og side for lage nye brukere.
