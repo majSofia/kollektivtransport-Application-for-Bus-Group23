@@ -7,6 +7,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /*Vi har bestemt å endre background image, til background color*/
   /*background-image: url(./image/background-image.png);*/
   background-color: #9fb09a;
   min-height: 100vh;
