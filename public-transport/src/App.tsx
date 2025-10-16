@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Login from './Components/logInPage';
 import CreateNewUser from './Components/userPage';
+import HomePage from './Components/homePage';
 import './App.css';
 
 const App: React.FC = () => {
@@ -13,6 +14,8 @@ const App: React.FC = () => {
       ) : (
         <CreateNewUser onBackToLogin={() => setCurrentPage('login')} />
       )}
+
+      
     </>
   );
 };
