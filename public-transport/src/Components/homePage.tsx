@@ -1,5 +1,8 @@
 import '../App.css';
 import Layout from './layout';
+import WelcomeBanner from './WelcomeMessage';
+import QuickSearchForm from './SearchBox';
+import TicketList from './TicketList';
 
 //Dette er et objekt interface for ticket som viser hvordan et billett skl ser ut.
 //Vi definerer hvilke nøkler og verdier billetten skal ha.
@@ -24,6 +27,43 @@ interface HomePageProps {
   activeTickets: Ticket[];
   upcomingTrips: Ticket[];
 }
+
+const HomePage: React.FC<HomePageProps> = ({
+  userName,
+  onLogout,
+  onNavigateToSearch,
+  activeTickets,
+  upcomingTrips
+}) => {
+  return (
+    <Layout
+      userName={userName}
+      onLogout={onLogout}
+      onNavigateToSearch={() => onNavigateToSearch()}
+    >
+      <WelcomeBanner userName={userName} />
+      <QuickSearchForm onSearch={onNavigateToSearch} />
+      
+      <TicketList
+        tickets={activeTickets}
+        type="active"
+        title="Your active ticket"
+        emptyIcon="🎫"
+        emptyMessage="You have no active tickets."
+      />
+      
+      <TicketList
+        tickets={upcomingTrips}
+        type="upcoming"
+        title="Your upcoming trips"
+        emptyIcon="🚌"
+        emptyMessage="No planned trips"
+      />
+    </Layout>
+  );
+};
+
+export default HomePage;
 
 
 
