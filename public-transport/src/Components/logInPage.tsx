@@ -1,41 +1,35 @@
 import React, { useState } from 'react';
-// På den kodelinje henter vi info fra vår virtuelle database
-import { validateLogin, debugShowAllUsers } from './virtualDataBase';
-// vi har lagt en funksjonstype, difenere vi interface for å vise hvilken 
-// props et objekt skal ha, så på denne vi sender inn til login komponenten.
+import { validateLogin, debugShowAllUsers, saveCurrentUser } from './virtualDataBase';
+
 interface LoginProps {
   onCreateAccount: () => void;
+  onLoginSuccess: (userName: string) => void;
 }
 
-const Login: React.FC<LoginProps> = ({ onCreateAccount }) => {
-  // vi lager tre variable for å holde på e-post, passord, og feilmelding.
+const Login: React.FC<LoginProps> = ({ onCreateAccount, onLoginSuccess }) => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
- // Denne funksjonen kjører nå man vil login (trykker på login knapp)
+
   const handleLogin = () => {
     setError('');
- // if-statement for å sjekke om e-post eller passord mangler noe, sjekk av epost/pw
- // om det er noen feil kommer en feilmelding (setError)
+
     if (!email || !password) {
       setError("Please complete all fields");
       return;
     }
 
-    // sjekk om users finnes i databasen
     const user = validateLogin(email, password);
-   // if statement for å sjekke at user finnes i databasen, så hvis ja 
-   // gir user velkommen melding.
-   // hvis ikke finnes, gir user feilmelding
     if (user) {
-      alert(`Welcome, ${user.fullName}! 🎉`);
-      console.log("Signed-in user:", user);
+      // Lagre bruker i localStorage
+      saveCurrentUser(user);
+      
+      onLoginSuccess(user.fullName);
     } else {
       setError("User not found");
     }
   };
 
-  // Denne funksjonen viser alle testbrukere i konsollen 
   const showDummyUsers = () => {
     debugShowAllUsers();
     alert("Check the console to see all dummy users!");
@@ -84,8 +78,7 @@ const Login: React.FC<LoginProps> = ({ onCreateAccount }) => {
               <button onClick={onCreateAccount} className="btn btn-link">
                 Create New User
               </button>
-              
-              
+             
               <button onClick={showDummyUsers} className="btn btn-debug">
                 Show dummy users
               </button>
