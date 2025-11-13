@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import Login from './Components/logInPage';
 import CreateNewUser from './Components/userPage';
 import HomePage from './Components/homePage';
-import SearchPage from './Components/searchPage'
+import SearchPage from './Components/searchPage';
+import PurchaseSummaryPage from './Components/purchaseSummary';
 import './App.css';
 import { getCurrentUser, logoutUser } from './Components/virtualDataBase';
 
@@ -217,7 +218,6 @@ const App = () => {
       <Login
         onCreateAccount={() => setCurrentPage('create')}
         onLoginSuccess={handleLoginSuccess}
-        
       />
     )
   }
@@ -251,6 +251,16 @@ const App = () => {
           onNavigateToPurchase={handleNavigateToPurchase}
           initialFrom={searchParams.from}
           initialTo={searchParams.to}
+        />
+      )}
+      
+      {currentPage === 'purchase' && bookingData && (
+        <PurchaseSummaryPage
+          userName={currentUser}
+          onLogout={handleLogout}
+          onNavigateToHome={handleNavigateToHome}
+          bookingData={bookingData}
+          onConfirmOrder={handleConfirmOrder}
         />
       )}
     </div>
