@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import Layout from './layout';
+import Layout from './Layout';
 import OrderSummary from './OrderSummary';
 import ConfirmationMessage from './ConfirmationMessage';
 

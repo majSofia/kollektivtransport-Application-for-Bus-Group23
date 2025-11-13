@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { type Route, getRoutesBetween, filterRoutesByTime } from './routesMocData';
-import Layout from './layout';
+import Layout from './Layout';
 import SearchForm from './SearchForm';
 import PassengerSelector, { type Passenger } from './PassengerSelect';
 import SearchResults from './SearchResualt';

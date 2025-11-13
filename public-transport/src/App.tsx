@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Login from './Components/logInPage';
 import CreateNewUser from './Components/userPage';
 import HomePage from './Components/homePage';
-import SearchPage from './Components/SearchPage';
+import SearchPage from './Components/searchPage'
 import './App.css';
 import { getCurrentUser, logoutUser } from './Components/virtualDataBase';
 

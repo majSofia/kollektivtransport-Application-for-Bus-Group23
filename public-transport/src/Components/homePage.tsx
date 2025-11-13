@@ -1,5 +1,5 @@
 import '../App.css';
-import Layout from './layout';
+import Layout from './Layout';
 import WelcomeBanner from './WelcomeMessage';
 import QuickSearchForm from './SearchBox';
 import TicketList from './TicketList';
