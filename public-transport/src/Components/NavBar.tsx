@@ -24,8 +24,6 @@ export default function Navbar({ userName, onLogout, onNavigateToHome, onNavigat
             <span></span>
           </button>
 
-          
-          <div className="logo-placeholder"></div>
 
           {/* våres firma navn*/}
           <h1 className="company-name">Kudo Transport</h1>
@@ -55,8 +53,7 @@ export default function Navbar({ userName, onLogout, onNavigateToHome, onNavigat
             }}> Search Travel</a>
           )}
           
-          <a onClick={() => setMenuOpen(false)}> My tickets</a>
-          <a onClick={() => setMenuOpen(false)}> Profile</a>
+          
 
           {onLogout && (
             <button className="menu-logout" onClick={onLogout}>
