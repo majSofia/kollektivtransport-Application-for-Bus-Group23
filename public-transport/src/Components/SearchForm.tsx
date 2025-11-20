@@ -72,7 +72,7 @@ const SearchForm: React.FC<SearchFormProps> = ({
     }
 
     if (passengers === 0) {
-      alert('Vennligst legg til minst én passasjer');
+      alert('Vennligst legg til minst en passasjer');
       return;
     }
 

@@ -42,7 +42,7 @@ const SearchPage: React.FC<SearchPageProps> = ({
     const availableRoutes = getRoutesBetween(data.from, data.to);
 
     if (availableRoutes.length === 0) {
-      alert('Beklager, det finnes ingen ruter mellom disse byene ennÃ¥.');
+      alert('Beklager, det finnes ingen ruter mellom disse byene ennå.');
       return;
     }
 

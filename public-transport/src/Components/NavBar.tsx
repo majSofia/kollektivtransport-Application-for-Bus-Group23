@@ -25,6 +25,7 @@ export default function Navbar({ userName, onLogout, onNavigateToHome, onNavigat
           </button>
 
 
+
           {/* våres firma navn*/}
           <h1 className="company-name">Kudo Transport</h1>
         </div>
