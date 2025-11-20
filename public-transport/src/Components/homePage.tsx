@@ -5,7 +5,7 @@ import QuickSearchForm from './SearchBox';
 import TicketList from './TicketList';
 
 //Dette er et objekt interface for ticket som viser hvordan et billett skl ser ut.
-//Vi definerer hvilke nøkler og verdier billetten skal ha..
+//Vi definerer hvilke nøkler og verdier billetten skal ha.
 interface Ticket {
   orderId: string;
   from: string;
